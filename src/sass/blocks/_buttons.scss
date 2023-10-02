@@ -1,0 +1,32 @@
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+
+    .button{
+        display: block;
+        height: 45px;
+        margin-top: 25px;
+        padding: 12px 25px;
+        border-radius: 7%;
+        // text
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &:hover{
+            text-decoration: none;
+            color:#D90258;
+        }
+        &_bg{
+            background-color: $main-color;
+            &:hover{
+                color:#FFF;
+                background-color: #172A92;
+            }
+        }
+    }
+}

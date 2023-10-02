@@ -1,0 +1,30 @@
+.tittle{
+    position: relative;
+    margin-left: 10px;
+    color: #FFF;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 2;
+    margin-bottom: 9px;
+    @include before_circle;
+    &-fs20 {
+        font-size: 20px;
+    }
+    &_circle-center{
+        @include center_circle;
+    }
+}
+
+
+.header{
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    &-fs48{
+        font-size: 48px;
+    }
+}
