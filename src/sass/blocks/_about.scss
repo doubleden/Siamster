@@ -1,0 +1,50 @@
+.about {
+    .container{
+        display: flex;
+    }
+    &__picture{
+        @include picture_conf;
+    }
+    &__devider {
+        @include devider;
+    }
+    &__descrp {
+        margin-top: 20px;
+        display: block;
+        width: 570px;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__skills{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 275px);
+        grid-auto-rows: 40px;
+        row-gap: 60px;
+        column-gap: 10px;
+        &-block{
+            position: relative;
+            display: flex;
+            padding-left: 60px;
+            &__icon{
+                position: absolute;
+                top: 6px;
+                left: 23px;
+            }
+            &__text {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @include before_circle;
+                &:before{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
