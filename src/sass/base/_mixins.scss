@@ -33,10 +33,3 @@
     height: 500px;
     margin-right: 70px;
 }
-
-@mixin devider {
-    width: 60px;
-    height: 3px;
-    background-color: $main-color;
-    border-radius: 10px;
-}

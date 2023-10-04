@@ -24,7 +24,24 @@
     font-style: normal;
     font-weight: 700;
     line-height: 60px; /* 125% */
+    text-align: center;
+    &-taLeft {
+        text-align: left;
+    }
     &-fs48{
         font-size: 48px;
+        text-align: left;
+    }
+}
+
+.devider{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    border-radius: 10px;
+    margin: 0 auto;
+    &-m0 {
+        margin: 0;
     }
 }
