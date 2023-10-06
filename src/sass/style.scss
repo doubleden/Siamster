@@ -16,14 +16,20 @@ body{
     background-color: #0F010F;
 }
 section{
-    padding-top: 120px;
+    padding-bottom: 230px;
 }
 
 .container{
     width: 1140px;
     margin: 0 auto;
+    &-w835{
+        width: 835px;
+        margin: 0 auto;
+        position: relative;
+    }
 }
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/promo';
 @import 'blocks/about';
+@import 'blocks/expirience';

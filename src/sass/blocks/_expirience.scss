@@ -1,0 +1,169 @@
+.expirience{
+    position: relative;
+    padding-top: 100px;
+    &__subheader{
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 25px;
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 415px);
+        column-gap: 1px;
+    }
+    &__blocks-devider{
+        position: absolute;
+        top: 210px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 1.5px;
+        height: 465px;
+        background-color:#FFF;
+        @include before_circle;
+        &:before{
+            width: 15px;
+            height: 15px;
+            top: -14px;
+            left: -7px;
+        }
+    }
+    &__block-left{
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        row-gap: 60px;
+        &__icon{
+            @include before_circle;
+            &:before{
+                top: -13px;
+                left: 204px;
+            }
+        }
+        &__header-block{
+            position: relative;
+            display: flex;
+            margin-left: 130px;
+            height: 20px;
+        }
+        &__devider{
+            position: absolute;
+            top: 5px;
+            right: -2px;
+            display: block;
+            width: 41px;
+            height: 1px;
+            background-color:#FFF;
+        }
+        &__header{
+            display: block;
+            width: 181px;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-right: 20px;
+            text-align: right;
+            a {
+                color: #0019FF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-decoration: underline;
+            }
+        }
+        &__subheader{
+            display: block;
+            width: 181px;
+            margin-left: 130px;
+            color: #FFF;
+            text-align: right;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &__descrp{
+            margin-top: 12px;
+            margin-right: 40px;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+    &__block-right{
+        margin-top: 69px;
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        row-gap: 90px;
+        &__icon{
+            @include before_circle;
+            &:before{
+                top: -13px;
+                left: -16px;
+            }
+        }
+        &__header-block{
+            position: relative;
+            display: flex;
+            margin-right: 130px;
+            margin-left: 60px;
+            height: 20px;
+        }
+        &__devider{
+            position: absolute;
+            top: 5px;
+            left: -59px;
+            display: block;
+            width: 40px;
+            height: 1px;
+            background-color:#FFF;
+        }
+        &__header{
+            display: block;
+            width: 181px;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+            margin-left: 20px;
+            a {
+                color: #0019FF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+        &__subheader{
+            display: block;
+            width: 181px;
+            margin-left: 106px;
+            color: #FFF;
+            text-align: left;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &__descrp{
+            margin-top: 12px;
+            margin-left: 40px;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

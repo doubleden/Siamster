@@ -1,12 +1,10 @@
 .about {
+    padding-top: 230px;
     .container{
         display: flex;
     }
     &__picture{
         @include picture_conf;
-    }
-    &__devider {
-        @include devider;
     }
     &__descrp {
         margin-top: 20px;

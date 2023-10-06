@@ -1,5 +1,6 @@
 .tittle{
     position: relative;
+    display: block;
     margin-left: 10px;
     color: #FFF;
     font-style: normal;
@@ -9,10 +10,8 @@
     z-index: 2;
     margin-bottom: 9px;
     @include before_circle;
-    &-fs20 {
-        font-size: 20px;
-    }
-    &_circle-center{
+    &__center{
+        text-align: center;
         @include center_circle;
     }
 }
@@ -41,6 +40,7 @@
     background-color: $main-color;
     border-radius: 10px;
     margin: 0 auto;
+    margin-top: 25px;
     &-m0 {
         margin: 0;
     }
