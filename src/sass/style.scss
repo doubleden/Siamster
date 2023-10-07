@@ -16,7 +16,8 @@ body{
     background-color: #0F010F;
 }
 section{
-    padding-bottom: 230px;
+    padding-top: 70px;
+    padding-bottom: 130px;
 }
 
 .container{
@@ -33,3 +34,6 @@ section{
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/expirience';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';
