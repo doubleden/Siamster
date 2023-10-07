@@ -11,13 +11,15 @@
     }
     &__wrapper{
         margin-top: 60px;
+        padding-left: 150px;
+        padding-right: 150px;
         display: grid;
         grid-template-columns: repeat(2, 415px);
         column-gap: 1px;
     }
     &__blocks-devider{
         position: absolute;
-        top: 210px;
+        top: 285px;
         left: 50%;
         transform: translateX(-50%);
         display: block;
