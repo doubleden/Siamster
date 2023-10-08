@@ -81,7 +81,17 @@
             resize: none;
         }
     }
-    &__btn {
-        margin: 0;
+    &__policy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_text{
+            color:#FFF;
+            font-size: 11px;
+            font-weight: 500;
+        }
+    .error {
+        border: 2px solid red;
+    }
     }
 }
