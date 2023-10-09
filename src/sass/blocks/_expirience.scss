@@ -15,7 +15,7 @@
         padding-right: 150px;
         display: grid;
         grid-template-columns: repeat(2, 415px);
-        column-gap: 1px;
+        column-gap: 5px;
     }
     &__blocks-devider{
         position: absolute;
@@ -54,7 +54,7 @@
         &__devider{
             position: absolute;
             top: 5px;
-            right: -2px;
+            right: -5px;
             display: block;
             width: 41px;
             height: 1px;
