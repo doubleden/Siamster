@@ -3,7 +3,6 @@
 
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/media';
 @import 'blocks/titlesAndHeadersAndDevider';
 @import 'blocks/buttons';
 @import 'blocks/modal';
@@ -27,11 +26,6 @@ img {
 .container{
     width: 1140px;
     margin: 0 auto;
-    &-w835{
-        width: 835px;
-        margin: 0 auto;
-        position: relative;
-    }
 }
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
@@ -42,3 +36,7 @@ img {
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';
+
+
+
+@import 'base/media';

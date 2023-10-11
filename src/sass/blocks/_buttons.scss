@@ -1,9 +1,13 @@
 
 
 .buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 135px);
+    column-gap: 20px;
+    a {
+        display: block;
+        width: 100%;
+    }
 }
 .button{
     display: block;
@@ -11,6 +15,7 @@
     margin-top: 25px;
     padding: 12px 25px;
     border-radius: 7%;
+    justify-content: center;
     // text
     color: #FFF;
     font-size: 14px;

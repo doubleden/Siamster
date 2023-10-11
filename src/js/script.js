@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var policyCheckbox = document.getElementById('policyCheckbox');
     var modal = document.querySelector('.modal');
     var closeButton = document.querySelector('.modal__close');
-    var overlay = document.querySelector('.overlay');
+    var overlayModal = document.querySelector('.overlay_modal');
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.remove('modal_active');
     });
 
-    overlay.addEventListener('click', function () {
+    overlayModal.addEventListener('click', function () {
         modal.classList.remove('modal_active');
     });
 });
