@@ -257,10 +257,13 @@
             gap: 35px;
         }
         &__abilities{
-            grid-template-columns: repeat(1,100%);
+            grid-template-columns: repeat(1,80%);
             grid-template-rows: repeat(6,70px);
             row-gap: 60px;
-            }
+        }
+        &__ability{
+            grid-template-columns: repeat(2,auto);
+        }
     }
     .portfolio{
         padding-top: 0;
