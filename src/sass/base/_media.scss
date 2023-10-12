@@ -8,11 +8,131 @@
     .container {
         max-width: 960px;
     }
+    .about{
+        &__picture{
+            margin-right: 50px;
+        }
+        &__descrp{
+            width: 420px;
+        }
+        &__skills{
+            grid-template-columns: repeat(1,275px);
+        }
+    }
+    .expirience{
+        &__wrapper{
+            padding-left: 60px;
+            padding-right: 0;
+        }
+        &__block-right__descrp{
+            width: 330px;
+        }
+    }
+    .skills{
+        &__blocks{
+            grid-template-columns: repeat(3,270px);
+            grid-template-rows: repeat(3,270px);
+            justify-content: center;
+        }
+        &__abilities{
+            grid-template-columns: repeat(2,350px);
+            grid-template-rows: repeat(3,70px);
+            justify-content: center;
+        }
+    }
+    .portfolio{
+        &__blocks{
+            grid-template-columns: repeat(3,280px);
+            justify-content: center;
+            .vertical, .horizontal{
+                grid-row: auto;
+                grid-column: auto;
+            }
+        }
+    }
+    .price{
+        padding-left: 0;
+        padding-right: 0;
+        &__wrapper{
+            grid-template-columns: repeat(2,370px);
+            justify-content: center;
+            column-gap: 85px;
+
+        }
+    }
+    .contacts{
+        &__picture{
+            display: none;
+        }
+        &__policy{
+            justify-content: center;
+            &_text{
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .about{
+        &__picture{
+            width: 300px;
+            height: 350px;
+        }
+        &__descrp{
+            width: 380px;
+        }
+    }
+    .expirience{
+        &__wrapper{
+            padding: 0;
+            grid-template-columns: repeat(2,355px);
+        }
+        &__block-left{
+            &__header-block{
+                margin-left: 65px;
+            }
+            &__subheader{
+                margin-left: 65px;
+            }
+        }
+        &__block-right{
+            grid-template-columns: 350px;
+            &__descrp {
+            width: 300px;
+            }
+        }
+    }
+    .skills{
+        &__blocks{
+            grid-template-columns: repeat(2,270px);
+            grid-template-rows: repeat(4,270px);
+        }
+    }
+    .portfolio{
+        &__blocks{
+            grid-template-columns: repeat(2,280px);
+        }
+    }
+    .price{
+        &__wrapper {
+            grid-template-columns: repeat(1,440px);
+            grid-template-rows: repeat(2,250px);
+            justify-content: center;
+        }
+        &__block{
+            gap: 0;
+        }
+        &__item{
+            grid-template-columns: repeat(2,auto);
+
+        }
+        &__header, &__cost {
+            font-size: 13px;
+        }
     }
 }
 
@@ -21,22 +141,6 @@
         max-width: 540px;
     }
 
-    .promo {
-        padding-top: 200px;
-    }
-    .tittle{
-        font-size: 15px;
-    }
-    .header {
-        line-height: 40px;
-    }
-    .header-fs48{
-        font-size: 30px;
-    }
-
-}
-
-@media (max-width: 576px) {
     section {
         padding-top: 5px;
     }
@@ -48,11 +152,11 @@
     }
     .container {
         max-width: 100%;
-        padding: 0 20px;
     }
     .header-fs48{
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 20px;
+        line-height: 48px;
     }
     .menu {
         &__block {
@@ -81,7 +185,6 @@
         }
         .tittle {
             margin: 0;
-
         }
     }
     .about{
@@ -101,7 +204,7 @@
             grid-template-columns: repeat(1,275px);
         }
         &__descrp{
-            width: 290px;
+            width: 445px;
         }
     }
     .expirience {
@@ -125,6 +228,7 @@
             }
             &__descrp{
                 margin-right: 0;
+                width: 280px;
             }
         }
         &__block-right{
@@ -141,18 +245,19 @@
             }
             &__descrp{
                 margin-left: 0;
+                width: 280px;
             }
         }
     }
     .skills{
         &__blocks{
-            grid-template-columns: repeat(1,270px);
-            grid-template-rows: repeat(7,270px);
+            grid-template-columns: repeat(2,250px);
+            grid-template-rows: repeat(4,270px);
             justify-content: center;
             gap: 35px;
         }
         &__abilities{
-            grid-template-columns: repeat(1,350px);
+            grid-template-columns: repeat(1,100%);
             grid-template-rows: repeat(6,70px);
             row-gap: 60px;
             }
@@ -160,8 +265,8 @@
     .portfolio{
         padding-top: 0;
         &__blocks{
-            grid-template-columns: repeat(1,280px);
-            grid-template-rows: repeat(6,280px);
+            grid-template-columns: repeat(2,260px);
+            grid-template-rows: repeat(3,260px);
             gap: 20px;
             justify-content: center;
             .horizontal , .vertical{
@@ -180,7 +285,7 @@
             gap: 0;
         }
         &__item{
-            grid-template-columns: repeat(2,auto);
+            grid-template-columns: repeat(2,164px);
 
         }
         &__header, &__cost {
@@ -221,5 +326,58 @@
         &__subheader{
             font-size: 15px;
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .header-fs48{
+        font-size: 25px;
+    }
+    .promo{
+        padding-top: 200px;
+    }
+    .about{
+        &__skills {
+            grid-template-columns: repeat(1,256px);
+        }
+        &__descrp{
+            width: 235px;
+        }
+    }
+    .expirience {
+        &__block-left{
+            &__descrp{
+                width: 220px;
+            }
+        }
+        &__block-right{
+            grid-template-columns: 260px;
+            &__item{
+                width: 220px;
+            }
+            &__descrp{
+                width: 230px;
+            }
+        }
+    }
+    .skills{
+        &__blocks{
+            grid-template-columns: repeat(1,270px);
+            grid-template-rows: repeat(7,270px);
+        }
+    }
+    .portfolio{
+        &__blocks{
+            grid-template-columns: repeat(1,280px);
+            grid-template-rows: repeat(6,280px);
+        }
+    }
+    .price{
+        &__item{
+            grid-template-columns: repeat(2,auto);
+        }
+    }
+    .buttons{
+        grid-template-columns: repeat(2,120px);
     }
 }
