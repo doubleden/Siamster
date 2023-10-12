@@ -37,6 +37,9 @@
 }
 
 @media (max-width: 576px) {
+    section {
+        padding-top: 5px;
+    }
     .tittle {
         margin-top: 46px;
     }
@@ -66,7 +69,10 @@
     }
     .hamburger{
         right: 15px;
-        top: 20px;
+        top: 10px;
+    }
+    .bar-mobile{
+        display: block;
     }
     .promo{
         background: url(../img/main_bg.jpg) no-repeat 26%/cover;
@@ -83,7 +89,11 @@
         .container{
             flex-direction: column;
         }
+        &__block{
+            margin-left: 14.5%;
+        }
         &__picture {
+            margin: 0 auto;
             width: 300px;
             height: 340px;
         }
@@ -92,6 +102,124 @@
         }
         &__descrp{
             width: 290px;
+        }
+    }
+    .expirience {
+        padding-bottom: 0;
+        &__blocks-devider{
+            display: none;
+        }
+
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(2,0);
+            padding-left: 20%;
+        }
+        &__block-left{
+            row-gap: 350px;
+            &__devider{
+                display: none;
+            }
+            &__header-block, &__subheader{
+                margin-left: 0;
+            }
+            &__descrp{
+                margin-right: 0;
+            }
+        }
+        &__block-right{
+            margin-top: 221px;
+            row-gap: 350px;
+            &__devider{
+                display: none;
+            }
+            &__header-block{
+                margin: 0;
+            }
+            &__subheader{
+                margin-left: 48px;
+            }
+            &__descrp{
+                margin-left: 0;
+            }
+        }
+    }
+    .skills{
+        &__blocks{
+            grid-template-columns: repeat(1,270px);
+            grid-template-rows: repeat(7,270px);
+            justify-content: center;
+            gap: 35px;
+        }
+        &__abilities{
+            grid-template-columns: repeat(1,350px);
+            grid-template-rows: repeat(6,70px);
+            row-gap: 60px;
+            }
+    }
+    .portfolio{
+        padding-top: 0;
+        &__blocks{
+            grid-template-columns: repeat(1,280px);
+            grid-template-rows: repeat(6,280px);
+            gap: 20px;
+            justify-content: center;
+            .horizontal , .vertical{
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+    }
+    .price{
+        &__wrapper {
+            grid-template-columns: repeat(1,275px);
+            grid-template-rows: repeat(2,250px);
+            justify-content: center;
+        }
+        &__block{
+            gap: 0;
+        }
+        &__item{
+            grid-template-columns: repeat(2,auto);
+
+        }
+        &__header, &__cost {
+            font-size: 13px;
+        }
+    }
+    .contacts{
+        padding-top: 0;
+        padding-bottom: 35px;
+        .container {
+            padding: 0 20px;
+        }
+        &__picture{
+            display: none;
+        }
+        &__form{
+            grid-template-columns: 100%;
+            grid-template-rows: 45px 45px 190px 45px 45px;
+            justify-content: center;
+        }
+        &__textarea{
+            grid-column: auto;
+        }
+        &__policy{
+            justify-content: center;
+            &_text{
+                margin-left: 10px;
+            }
+        }
+    }
+    .modal{
+        &__block{
+            width: 300px;
+        }
+        &__header{
+            font-size: 18px;
+        }
+        &__subheader{
+            font-size: 15px;
         }
     }
 }
