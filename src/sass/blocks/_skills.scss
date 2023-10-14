@@ -10,6 +10,10 @@
         border: 1px solid #FFF;
         border-radius: 10%;
         padding: 25px 30px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
         &:nth-child(6){
             .skills-item__title{
                 margin-top: 40px;
