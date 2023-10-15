@@ -10,7 +10,7 @@
 /build
 
 src/mailer/config2.php
-/dist/
+dist/mailer/config2.php
 # misc
 .DS_Store
 .env.local
