@@ -1,5 +1,5 @@
 <?php
-require_once('config2.php');
+require_once('conf.php');
 
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     $name = $_POST['name'];

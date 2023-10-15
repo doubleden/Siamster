@@ -8,9 +8,9 @@
 
 # production
 /build
+dist/mailer/conf.php
+src/mailer/conf.php
 
-src/mailer/config2.php
-dist/mailer/config2.php
 # misc
 .DS_Store
 .env.local
